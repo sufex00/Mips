@@ -8,43 +8,83 @@ z2
 !i10f 100
 cModel Technology
 Z0 d/home/pedro/Mips/simulation/qsim
-vmux2
-Z1 !s110 1479905648
+vflopr
+Z1 !s110 1479906384
 !i10b 1
-!s100 Rfb3Enjh[4Edh>mE>UQ6P1
-Imh@dZUUj;F8J5^m48NB0A3
+!s100 mK@mOnc<XN11mcHaK`F5N1
+IAW^bNmzScHz`MzO5>j;C12
 Z2 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1479905645
-8MIPS.vo
-FMIPS.vo
-L0 32
-Z3 OV;L;10.4d;61
+w1479906384
+Z3 8MIPS.vo
+Z4 FMIPS.vo
+Z5 L0 32
+Z6 OV;L;10.4d;61
 r1
 !s85 0
 31
-Z4 !s108 1479905648.000000
-!s107 MIPS.vo|
-!s90 -work|work|MIPS.vo|
+Z7 !s108 1479906384.000000
+Z8 !s107 MIPS.vo|
+Z9 !s90 -work|work|MIPS.vo|
 !i113 1
-Z5 o-work work
-vmux2_vlg_vec_tst
+Z10 o-work work
+vflopr_vlg_vec_tst
 R1
+!i10b 1
+!s100 WVOXlh>P4;Pn[G:Bzcf`N3
+IEQKR_1bzI55YncPUMCFAJ1
+R2
+R0
+w1479906382
+Z11 8Waveform.vwf.vt
+Z12 FWaveform.vwf.vt
+Z13 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+Z14 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+vmux2
+Z15 !s110 1479905648
+!i10b 1
+!s100 Rfb3Enjh[4Edh>mE>UQ6P1
+Imh@dZUUj;F8J5^m48NB0A3
+R2
+R0
+w1479905645
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1479905648.000000
+R8
+R9
+!i113 1
+R10
+vmux2_vlg_vec_tst
+R15
 !i10b 1
 !s100 EIkk8dJXEBdD[[J3O<@BK2
 IkJRKkMoJ<_D8O]fjBjI=e2
 R2
 R0
 w1479905643
-8Waveform.vwf.vt
-FWaveform.vwf.vt
-L0 30
-R3
+R11
+R12
+R13
+R6
 r1
 !s85 0
 31
-R4
+R16
 !s107 Waveform.vwf.vt|
-!s90 -work|work|Waveform.vwf.vt|
+R14
 !i113 1
-R5
+R10

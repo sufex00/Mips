@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Wed Nov 23 09:53:08 2016
+Analysis & Synthesis Status : Successful - Wed Nov 23 10:04:20 2016
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : MIPS
-Top-level Entity Name : mux2
+Top-level Entity Name : flopr
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 0
-Total pins : 25
+Total registers : 8
+Total pins : 18
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

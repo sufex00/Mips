@@ -1,28 +1,32 @@
 # do MIPS.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 10:38:05 on Nov 23,2016
+# Start time: 20:43:53 on Nov 23,2016
 # vlog -work work MIPS.vo 
-# -- Compiling module adder
+# -- Compiling module regfile
 # 
 # Top level modules:
-# 	adder
-# End time: 10:38:05 on Nov 23,2016, Elapsed time: 0:00:00
+# 	regfile
+# End time: 20:43:53 on Nov 23,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 10:38:05 on Nov 23,2016
+# Start time: 20:43:53 on Nov 23,2016
 # vlog -work work Waveform.vwf.vt 
-# -- Compiling module adder_vlg_vec_tst
+# -- Compiling module regfile_vlg_vec_tst
 # 
 # Top level modules:
-# 	adder_vlg_vec_tst
-# End time: 10:38:05 on Nov 23,2016, Elapsed time: 0:00:00
+# 	regfile_vlg_vec_tst
+# End time: 20:43:54 on Nov 23,2016, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
-# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.adder_vlg_vec_tst -voptargs=""+acc"" 
-# Start time: 10:38:05 on Nov 23,2016
-# Loading work.adder_vlg_vec_tst
-# Loading work.adder
-# ** Note: $finish    : Waveform.vwf.vt(47)
-#    Time: 1 us  Iteration: 0  Instance: /adder_vlg_vec_tst
-# End time: 10:38:05 on Nov 23,2016, Elapsed time: 0:00:00
-# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.regfile_vlg_vec_tst -voptargs=""+acc"" 
+# Start time: 20:43:54 on Nov 23,2016
+# Loading work.regfile_vlg_vec_tst
+# Loading work.regfile
+# Loading altera_ver.dffeas
+# Loading altera_ver.PRIM_GDFF_LOW
+# ** Warning: Design size of 11787 statements exceeds ModelSim Altera Starter recommended capacity.
+# Expect performance to be adversely affected.
+# ** Note: $finish    : Waveform.vwf.vt(57)
+#    Time: 1 us  Iteration: 0  Instance: /regfile_vlg_vec_tst
+# End time: 20:43:57 on Nov 23,2016, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 1

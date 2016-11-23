@@ -1,5 +1,5 @@
 Flow report for MIPS
-Wed Nov 23 10:06:24 2016
+Wed Nov 23 10:13:00 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -41,16 +41,16 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Flow Summary                                                                  ;
 +---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Wed Nov 23 10:06:24 2016       ;
+; Flow Status                     ; Successful - Wed Nov 23 10:13:00 2016       ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
-; Top-level Entity Name           ; flopr                                       ;
+; Top-level Entity Name           ; signext                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Device                          ; 5CGXFC7C7F23C8                              ;
 ; Timing Models                   ; Final                                       ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 8                                           ;
-; Total pins                      ; 18                                          ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 48                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -68,7 +68,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/23/2016 10:04:05 ;
+; Start date & time ; 11/23/2016 10:11:49 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS                ;
 +-------------------+---------------------+
@@ -79,15 +79,15 @@ agreement for further details.
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                     ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.147990624524996         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.147990670825227         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl               ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog) ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                      ; --            ; --          ; eda_simulation ;
-; PARTITION_COLOR                     ; 16764057                  ; --            ; flopr       ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING     ; --            ; flopr       ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                    ; --            ; flopr       ; Top            ;
+; PARTITION_COLOR                     ; 16764057                  ; --            ; signext     ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING     ; --            ; signext     ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                    ; --            ; signext     ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files              ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; flopr                     ; MIPS          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; signext                   ; MIPS          ; --          ; --             ;
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
 
 
@@ -96,12 +96,10 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 1235 MB             ; 00:00:40                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1379 MB             ; 00:00:01                           ;
+; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 1235 MB             ; 00:00:36                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1382 MB             ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1383 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 1379 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1383 MB             ; 00:00:01                           ;
-; Total                ; 00:00:19     ; --                      ; --                  ; 00:00:44                           ;
+; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -113,8 +111,6 @@ agreement for further details.
 ; Analysis & Synthesis ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
 ; EDA Netlist Writer   ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
 ; EDA Netlist Writer   ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
-; EDA Netlist Writer   ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
-; EDA Netlist Writer   ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
 +----------------------+---------------------+--------------+------------+----------------+
 
 
@@ -122,8 +118,6 @@ agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off MIPS -c MIPS --vector_source=/home/pedro/Mips/Waveform.vwf --testbench_file=/home/pedro/Mips/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=/home/pedro/Mips/simulation/qsim/ MIPS -c MIPS
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off MIPS -c MIPS --vector_source=/home/pedro/Mips/Waveform.vwf --testbench_file=/home/pedro/Mips/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=/home/pedro/Mips/simulation/qsim/ MIPS -c MIPS
 

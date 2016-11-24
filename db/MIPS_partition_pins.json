@@ -4,15 +4,27 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "alucontrol[0]",
+					"name" : "memwrite",
 					"strict" : false
 				},
 				{
-					"name" : "alucontrol[1]",
+					"name" : "branch",
 					"strict" : false
 				},
 				{
-					"name" : "alucontrol[2]",
+					"name" : "alusrc",
+					"strict" : false
+				},
+				{
+					"name" : "regdst",
+					"strict" : false
+				},
+				{
+					"name" : "regwrite",
+					"strict" : false
+				},
+				{
+					"name" : "aluop[0]",
 					"strict" : false
 				},
 				{
@@ -20,31 +32,27 @@
 					"strict" : false
 				},
 				{
-					"name" : "funct[0]",
+					"name" : "op[0]",
 					"strict" : false
 				},
 				{
-					"name" : "funct[1]",
+					"name" : "op[1]",
 					"strict" : false
 				},
 				{
-					"name" : "funct[2]",
+					"name" : "op[3]",
 					"strict" : false
 				},
 				{
-					"name" : "funct[3]",
+					"name" : "op[5]",
 					"strict" : false
 				},
 				{
-					"name" : "funct[4]",
+					"name" : "op[2]",
 					"strict" : false
 				},
 				{
-					"name" : "funct[5]",
-					"strict" : false
-				},
-				{
-					"name" : "aluop[0]",
+					"name" : "op[4]",
 					"strict" : false
 				}
 			]

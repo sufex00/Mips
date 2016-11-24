@@ -1,0 +1,5 @@
+module maindec (input	logic [5:0] op,
+					 output	logic			memtorreg, memwrite,
+					 output	logic			branch, alusrc,
+					 output	logic			regdst, regwrite,
+					 output	logic	[1:0]	aluop);

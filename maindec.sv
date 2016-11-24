@@ -1,7 +1,8 @@
 module maindec (input	logic [5:0] op,
-					 output	logic			memtorreg, memwrite,
+					 output	logic			memtoreg, memwrite,
 					 output	logic			branch, alusrc,
 					 output	logic			regdst, regwrite,
+					 output	logic			jump,
 					 output	logic	[1:0]	aluop);
 					 
 		logic [8:0]	controls;

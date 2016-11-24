@@ -1,0 +1,378 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+d/home/pedro/teste
+vadder
+Z0 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z1 !s110 1480023928
+!i10b 1
+!s100 8SLYS4o64OZD4g2kIk1613
+IDXHcXbPmELm40EK[fdmNU2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+!s105 adder_sv_unit
+S1
+Z3 d/home/pedro/Mips
+w1479908026
+8/home/pedro/Mips/adder.sv
+F/home/pedro/Mips/adder.sv
+L0 1
+Z4 OV;L;10.4d;61
+r1
+!s85 0
+31
+Z5 !s108 1480023928.000000
+!s107 /home/pedro/Mips/adder.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/adder.sv|
+!i113 1
+Z6 o-work work -sv
+valu
+R0
+R1
+!i10b 1
+!s100 LT]bh:5lR=DYnBG<eL?Mm0
+ILl8Ec^O?5Ig<<bAiNeSb?0
+R2
+!s105 alu_sv_unit
+S1
+R3
+w1480023108
+8/home/pedro/Mips/alu.sv
+F/home/pedro/Mips/alu.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/alu.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/alu.sv|
+!i113 1
+R6
+valudeco
+R0
+R1
+!i10b 1
+!s100 JEa3Zj[iKATNb8^MdiN`H3
+I[SjlZPMRQAcf=;b2:6kRT3
+R2
+!s105 aludeco_sv_unit
+S1
+R3
+w1479946732
+8/home/pedro/Mips/aludeco.sv
+F/home/pedro/Mips/aludeco.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/aludeco.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/aludeco.sv|
+!i113 1
+R6
+vcontroller
+R0
+R1
+!i10b 1
+!s100 l[AVMjozP^Xn:3z:G]hSC3
+I]W^:Aej?bh1blnNzP<V;[3
+R2
+!s105 controller_sv_unit
+S1
+R3
+w1479957600
+8/home/pedro/Mips/controller.sv
+F/home/pedro/Mips/controller.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/controller.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/controller.sv|
+!i113 1
+R6
+vdatapath
+R0
+R1
+!i10b 1
+!s100 1AGdi1]fVkg28AhRmePEi3
+IT7?C=>;?cl6G^oQBGgQB23
+R2
+!s105 datapath_sv_unit
+S1
+R3
+w1480023018
+8/home/pedro/Mips/datapath.sv
+F/home/pedro/Mips/datapath.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/datapath.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/datapath.sv|
+!i113 1
+R6
+vdmem
+R0
+R1
+!i10b 1
+!s100 JT:6eK69OzY92Z4;OgHSj2
+IhkM5V]`GAWPa>h9=h>@WW1
+R2
+!s105 dmem_sv_unit
+S1
+R3
+w1480020512
+8/home/pedro/Mips/dmem.sv
+F/home/pedro/Mips/dmem.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/dmem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/dmem.sv|
+!i113 1
+R6
+vflopr
+R0
+R1
+!i10b 1
+!s100 =NXWDI92X2NGh_Nfk7OFA1
+IhY9JoIF4]?DFjd<o6Ezz;2
+R2
+!s105 flopr_sv_unit
+S1
+R3
+w1479906222
+8/home/pedro/Mips/flopr.sv
+F/home/pedro/Mips/flopr.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/flopr.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/flopr.sv|
+!i113 1
+R6
+vimem
+R0
+R1
+!i10b 1
+!s100 2k`mIk<SUU<cXgTQENL350
+IzDb6bALXi?OzNnR8c_^eK1
+R2
+!s105 imem_sv_unit
+S1
+R3
+w1480020892
+8/home/pedro/Mips/imem.sv
+F/home/pedro/Mips/imem.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/imem.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/imem.sv|
+!i113 1
+R6
+vmaindec
+R0
+R1
+!i10b 1
+!s100 ;m:92OoJ7aheA3NBZMB9:2
+I4BhC?]oALLCVJ>fbC@@0@1
+R2
+!s105 maindec_sv_unit
+S1
+R3
+w1479957538
+8/home/pedro/Mips/maindec.sv
+F/home/pedro/Mips/maindec.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/maindec.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/maindec.sv|
+!i113 1
+R6
+vmips
+R0
+R1
+!i10b 1
+!s100 <?HcSCOFUNNC:d81W]OcH0
+ISTj8WEVCAHk2RNX7`@ef71
+R2
+!s105 mips_sv_unit
+S1
+R3
+w1480019779
+8/home/pedro/Mips/mips.sv
+F/home/pedro/Mips/mips.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/mips.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/mips.sv|
+!i113 1
+R6
+vmux2
+R0
+R1
+!i10b 1
+!s100 EbLj7hTT[VR0Amz@N_6;Z2
+ISV?b4OLAiXCBHgbVIW;XK0
+R2
+!s105 mux2_sv_unit
+S1
+R3
+w1479905539
+8/home/pedro/Mips/mux2.sv
+F/home/pedro/Mips/mux2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/mux2.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/mux2.sv|
+!i113 1
+R6
+vregfile
+R0
+R1
+!i10b 1
+!s100 6bSV;?h29UzY7jQ<Ig^;_2
+Im^5SgDSJi=G@=NHbR@;Rb3
+R2
+!s105 regfile_sv_unit
+S1
+R3
+w1479909210
+8/home/pedro/Mips/regfile.sv
+F/home/pedro/Mips/regfile.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/regfile.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/regfile.sv|
+!i113 1
+R6
+vsignext
+R0
+R1
+!i10b 1
+!s100 366o`4FDATLT>9ol5^:1R0
+IA=KBR@@D79Z??nRRA4IgJ0
+R2
+!s105 signext_sv_unit
+S1
+R3
+w1479906634
+8/home/pedro/Mips/signext.sv
+F/home/pedro/Mips/signext.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/signext.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/signext.sv|
+!i113 1
+R6
+vsl2
+R0
+R1
+!i10b 1
+!s100 <NW2e^c<1bGjJKOI<5mh^1
+IB9OGGfD^1b=[Q8cOPcH>z1
+R2
+!s105 sl2_sv_unit
+S1
+R3
+w1479907360
+8/home/pedro/Mips/sl2.sv
+F/home/pedro/Mips/sl2.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/sl2.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/sl2.sv|
+!i113 1
+R6
+vtestbench
+R0
+R1
+!i10b 1
+!s100 o>^hGHLJdnfgRI3dMe^dR2
+ISc=i`Y:_1[=20Bk[in;9G2
+R2
+!s105 testbench_sv_unit
+S1
+R3
+w1480021715
+8/home/pedro/Mips/testbench.sv
+F/home/pedro/Mips/testbench.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/testbench.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/testbench.sv|
+!i113 1
+R6
+vtop
+R0
+R1
+!i10b 1
+!s100 n20lQQe>DKEET5N7H5eV:2
+I6Y9]PiHfCg1V=Q^aAJDQ@0
+R2
+!s105 top_sv_unit
+S1
+R3
+w1480023889
+8/home/pedro/Mips/top.sv
+F/home/pedro/Mips/top.sv
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+!s107 /home/pedro/Mips/top.sv|
+!s90 -reportprogress|300|-work|work|-sv|-stats=none|/home/pedro/Mips/top.sv|
+!i113 1
+R6

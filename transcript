@@ -1,0 +1,108 @@
+# reading /home/pedro/altera_lite/16.0/modelsim_ase/linuxaloem/../modelsim.ini
+# Loading project Mips
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.testbench
+# vsim work.testbench 
+# Start time: 18:42:23 on Nov 24,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+# ** Warning: (vsim-3015) /home/pedro/Mips/top.sv(9): [PCDPC] - Port size (32) does not match connection size (1) for port 'a'. The port definition is at: /home/pedro/Mips/dmem.sv(2).
+#    Time: 0 ps  Iteration: 0  Instance: /testbench/dut/dmem File: /home/pedro/Mips/dmem.sv
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 18:45:38 on Nov 24,2016, Elapsed time: 0:03:15
+# Errors: 0, Warnings: 1
+# vsim work.testbench 
+# Start time: 18:45:38 on Nov 24,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Process sim:/testbench/#INITIAL#9 no longer exists
+add wave -position insertpoint sim:/testbench/*
+vsim work.testbench
+# End time: 18:47:48 on Nov 24,2016, Elapsed time: 0:02:10
+# Errors: 0, Warnings: 1
+# vsim work.testbench 
+# Start time: 18:47:48 on Nov 24,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.mux2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+add wave -position insertpoint sim:/testbench/*
+run -all
+run -all

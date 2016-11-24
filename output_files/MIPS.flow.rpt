@@ -1,5 +1,5 @@
 Flow report for MIPS
-Thu Nov 24 17:56:49 2016
+Thu Nov 24 18:55:33 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -38,29 +38,24 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Flow Summary                                                                  ;
-+---------------------------------+---------------------------------------------+
-; Flow Status                     ; Successful - Thu Nov 24 17:56:49 2016       ;
-; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
-; Revision Name                   ; MIPS                                        ;
-; Top-level Entity Name           ; imem                                        ;
-; Family                          ; Cyclone V                                   ;
-; Device                          ; 5CGXFC7C7F23C8                              ;
-; Timing Models                   ; Final                                       ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 38                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Flow Summary                                                              ;
++-----------------------------+---------------------------------------------+
+; Flow Status                 ; Flow Failed - Thu Nov 24 18:55:33 2016      ;
+; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name               ; MIPS                                        ;
+; Top-level Entity Name       ; testbench                                   ;
+; Family                      ; Cyclone V                                   ;
+; Device                      ; 5CGXFC7C7F23C8                              ;
+; Timing Models               ; Final                                       ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -68,7 +63,7 @@ agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 11/24/2016 17:55:42 ;
+; Start date & time ; 11/24/2016 18:55:18 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; MIPS                ;
 +-------------------+---------------------+
@@ -79,15 +74,15 @@ agreement for further details.
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
 ; Assignment Name                     ; Value                     ; Default Value ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 0.148002094217319         ; --            ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 0.148002451819012         ; --            ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Verilog Hdl               ; --            ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (Verilog) ; <None>        ; --          ; --             ;
 ; EDA_TIME_SCALE                      ; 1 ps                      ; --            ; --          ; eda_simulation ;
-; PARTITION_COLOR                     ; 16764057                  ; --            ; imem        ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING     ; --            ; imem        ; Top            ;
-; PARTITION_NETLIST_TYPE              ; SOURCE                    ; --            ; imem        ; Top            ;
+; PARTITION_COLOR                     ; 16764057                  ; --            ; testbench   ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL ; PLACEMENT_AND_ROUTING     ; --            ; testbench   ; Top            ;
+; PARTITION_NETLIST_TYPE              ; SOURCE                    ; --            ; testbench   ; Top            ;
 ; PROJECT_OUTPUT_DIRECTORY            ; output_files              ; --            ; --          ; --             ;
-; TOP_LEVEL_ENTITY                    ; imem                      ; MIPS          ; --          ; --             ;
+; TOP_LEVEL_ENTITY                    ; testbench                 ; MIPS          ; --          ; --             ;
 +-------------------------------------+---------------------------+---------------+-------------+----------------+
 
 
@@ -96,10 +91,8 @@ agreement for further details.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 1236 MB             ; 00:00:40                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 1379 MB             ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 1384 MB             ; 00:00:01                           ;
-; Total                ; 00:00:17     ; --                      ; --                  ; 00:00:42                           ;
+; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 1237 MB             ; 00:00:39                           ;
+; Total                ; 00:00:16     ; --                      ; --                  ; 00:00:39                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -109,8 +102,6 @@ agreement for further details.
 ; Module Name          ; Machine Hostname    ; OS Name      ; OS Version ; Processor type ;
 +----------------------+---------------------+--------------+------------+----------------+
 ; Analysis & Synthesis ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
-; EDA Netlist Writer   ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
-; EDA Netlist Writer   ; pedro-Aspire-E1-572 ; Ubuntu 16.04 ; 16         ; x86_64         ;
 +----------------------+---------------------+--------------+------------+----------------+
 
 
@@ -118,8 +109,6 @@ agreement for further details.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off MIPS -c MIPS --vector_source=/home/pedro/Mips/Waveform.vwf --testbench_file=/home/pedro/Mips/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --functional=on --flatten_buses=off --simulation=on --tool=modelsim_oem --format=verilog --output_directory=/home/pedro/Mips/simulation/qsim/ MIPS -c MIPS
 
 
 

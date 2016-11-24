@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Thu Nov 24 17:55:58 2016
+Thu Nov 24 18:55:33 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -10,13 +10,19 @@ Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
   4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  5. Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|flopr:pcreg
+  6. Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:pcmux
+  7. Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:pcbrmux
+  8. Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:wrmux
+  9. Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:resmux
+ 10. Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:srcbmux
+ 11. Port Connectivity Checks: "top:dut|mips:mips|datapath:dp|alu:alu"
+ 12. Port Connectivity Checks: "top:dut|mips:mips|datapath:dp|mux2:pcmux"
+ 13. Port Connectivity Checks: "top:dut|mips:mips|datapath:dp|adder:pcaddl"
+ 14. Port Connectivity Checks: "top:dut|mips:mips"
+ 15. Port Connectivity Checks: "top:dut"
+ 16. Elapsed Time Per Partition
+ 17. Analysis & Synthesis Messages
 
 
 
@@ -40,27 +46,22 @@ agreement for further details.
 
 
 
-+-------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                  ;
-+---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Thu Nov 24 17:55:58 2016       ;
-; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
-; Revision Name                   ; MIPS                                        ;
-; Top-level Entity Name           ; imem                                        ;
-; Family                          ; Cyclone V                                   ;
-; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 0                                           ;
-; Total pins                      ; 38                                          ;
-; Total virtual pins              ; 0                                           ;
-; Total block memory bits         ; 0                                           ;
-; Total DSP Blocks                ; 0                                           ;
-; Total HSSI RX PCSs              ; 0                                           ;
-; Total HSSI PMA RX Deserializers ; 0                                           ;
-; Total HSSI TX PCSs              ; 0                                           ;
-; Total HSSI PMA TX Serializers   ; 0                                           ;
-; Total PLLs                      ; 0                                           ;
-; Total DLLs                      ; 0                                           ;
-+---------------------------------+---------------------------------------------+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Thu Nov 24 18:55:33 2016           ;
+; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name               ; MIPS                                        ;
+; Top-level Entity Name       ; testbench                                   ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
 
 
 +---------------------------------------------------------------------------------------------------------------------------+
@@ -69,7 +70,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; imem               ; MIPS               ;
+; Top-level entity name                                                           ; testbench          ; MIPS               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -162,82 +163,115 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+--------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                     ;
-+----------------------------------+-----------------+------------------------------+------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path ; Library ;
-+----------------------------------+-----------------+------------------------------+------------------------------+---------+
-; imem.sv                          ; yes             ; User SystemVerilog HDL File  ; /home/pedro/Mips/imem.sv     ;         ;
-; memfile.dat                      ; yes             ; Auto-Found Unspecified File  ; /home/pedro/Mips/memfile.dat ;         ;
-+----------------------------------+-----------------+------------------------------+------------------------------+---------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|flopr:pcreg ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary              ;
-+---------------------------------------------+------------+
-; Resource                                    ; Usage      ;
-+---------------------------------------------+------------+
-; Estimate of Logic utilization (ALMs needed) ; 20         ;
-;                                             ;            ;
-; Combinational ALUT usage for logic          ; 20         ;
-;     -- 7 input functions                    ; 0          ;
-;     -- 6 input functions                    ; 20         ;
-;     -- 5 input functions                    ; 0          ;
-;     -- 4 input functions                    ; 0          ;
-;     -- <=3 input functions                  ; 0          ;
-;                                             ;            ;
-; Dedicated logic registers                   ; 0          ;
-;                                             ;            ;
-; I/O pins                                    ; 38         ;
-;                                             ;            ;
-; Total DSP Blocks                            ; 0          ;
-;                                             ;            ;
-; Maximum fan-out node                        ; a[2]~input ;
-; Maximum fan-out                             ; 20         ;
-; Total fan-out                               ; 185        ;
-; Average fan-out                             ; 1.93       ;
-+---------------------------------------------+------------+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:pcmux ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                     ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |imem                      ; 20 (20)           ; 0 (0)        ; 0                 ; 0          ; 38   ; 0            ; |imem               ; imem        ; work         ;
-+----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:pcbrmux ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+------------------------------------------------------+
-; General Register Statistics                          ;
-+----------------------------------------------+-------+
-; Statistic                                    ; Value ;
-+----------------------------------------------+-------+
-; Total registers                              ; 0     ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 0     ;
-; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 0     ;
-; Number of registers using Preset             ; 0     ;
-+----------------------------------------------+-------+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:wrmux ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; WIDTH          ; 5     ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; arriav_lcell_comb     ; 21                          ;
-;     normal            ; 21                          ;
-;         0 data inputs ; 1                           ;
-;         6 data inputs ; 20                          ;
-; boundary_port         ; 38                          ;
-;                       ;                             ;
-; Max LUT depth         ; 1.00                        ;
-; Average LUT depth     ; 0.96                        ;
-+-----------------------+-----------------------------+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:resmux ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++-----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: top:dut|mips:mips|datapath:dp|mux2:srcbmux ;
++----------------+-------+----------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                           ;
++----------------+-------+----------------------------------------------------------------+
+; WIDTH          ; 32    ; Signed Integer                                                 ;
++----------------+-------+----------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|mips:mips|datapath:dp|alu:alu"                                              ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; zero ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|mips:mips|datapath:dp|mux2:pcmux" ;
++----------+-------+----------+----------------------------------------+
+; Port     ; Type  ; Severity ; Details                                ;
++----------+-------+----------+----------------------------------------+
+; d1[1..0] ; Input ; Info     ; Stuck at GND                           ;
++----------+-------+----------+----------------------------------------+
+
+
++------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|mips:mips|datapath:dp|adder:pcaddl" ;
++----------+-------+----------+------------------------------------------+
+; Port     ; Type  ; Severity ; Details                                  ;
++----------+-------+----------+------------------------------------------+
+; b[31..3] ; Input ; Info     ; Stuck at GND                             ;
+; b[1..0]  ; Input ; Info     ; Stuck at GND                             ;
+; b[2]     ; Input ; Info     ; Stuck at VCC                             ;
++----------+-------+----------+------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut|mips:mips"                                                                       ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; pc[31..8] ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; pc[1..0]  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "top:dut"                                                                                 ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port      ; Type   ; Severity ; Details                                                                             ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
+; clk       ; Input  ; Info     ; Stuck at GND                                                                        ;
+; writedata ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; dataadr   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
+; memwrite  ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++-----------+--------+----------+-------------------------------------------------------------------------------------+
 
 
 +-------------------------------+
@@ -255,7 +289,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Thu Nov 24 17:55:42 2016
+    Info: Processing started: Thu Nov 24 18:55:17 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
@@ -286,31 +320,74 @@ Info (12021): Found 1 design units, including 1 entities, in source file dmem.sv
     Info (12023): Found entity 1: dmem File: /home/pedro/Mips/dmem.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file imem.sv
     Info (12023): Found entity 1: imem File: /home/pedro/Mips/imem.sv Line: 1
-Info (12127): Elaborating entity "imem" for the top level hierarchy
+Info (12021): Found 1 design units, including 1 entities, in source file top.sv
+    Info (12023): Found entity 1: top File: /home/pedro/Mips/top.sv Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file testbench.sv
+    Info (12023): Found entity 1: testbench File: /home/pedro/Mips/testbench.sv Line: 1
+Info (12127): Elaborating entity "testbench" for the top level hierarchy
+Warning (10175): Verilog HDL warning at testbench.sv(24): ignoring unsupported system task File: /home/pedro/Mips/testbench.sv Line: 24
+Warning (10175): Verilog HDL warning at testbench.sv(30): ignoring unsupported system task File: /home/pedro/Mips/testbench.sv Line: 30
+Info (12128): Elaborating entity "top" for hierarchy "top:dut" File: /home/pedro/Mips/testbench.sv Line: 8
+Info (12128): Elaborating entity "mips" for hierarchy "top:dut|mips:mips" File: /home/pedro/Mips/top.sv Line: 7
+Info (12128): Elaborating entity "controller" for hierarchy "top:dut|mips:mips|controller:c" File: /home/pedro/Mips/mips.sv Line: 11
+Info (12128): Elaborating entity "maindec" for hierarchy "top:dut|mips:mips|controller:c|maindec:md" File: /home/pedro/Mips/controller.sv Line: 13
+Info (12128): Elaborating entity "aludeco" for hierarchy "top:dut|mips:mips|controller:c|aludeco:ad" File: /home/pedro/Mips/controller.sv Line: 15
+Info (12128): Elaborating entity "datapath" for hierarchy "top:dut|mips:mips|datapath:dp" File: /home/pedro/Mips/mips.sv Line: 12
+Info (12128): Elaborating entity "flopr" for hierarchy "top:dut|mips:mips|datapath:dp|flopr:pcreg" File: /home/pedro/Mips/datapath.sv Line: 18
+Info (12128): Elaborating entity "adder" for hierarchy "top:dut|mips:mips|datapath:dp|adder:pcaddl" File: /home/pedro/Mips/datapath.sv Line: 19
+Info (12128): Elaborating entity "sl2" for hierarchy "top:dut|mips:mips|datapath:dp|sl2:immsh" File: /home/pedro/Mips/datapath.sv Line: 20
+Info (12128): Elaborating entity "mux2" for hierarchy "top:dut|mips:mips|datapath:dp|mux2:pcmux" File: /home/pedro/Mips/datapath.sv Line: 22
+Info (12128): Elaborating entity "regfile" for hierarchy "top:dut|mips:mips|datapath:dp|regfile:rf" File: /home/pedro/Mips/datapath.sv Line: 26
+Info (12128): Elaborating entity "mux2" for hierarchy "top:dut|mips:mips|datapath:dp|mux2:wrmux" File: /home/pedro/Mips/datapath.sv Line: 27
+Info (12128): Elaborating entity "signext" for hierarchy "top:dut|mips:mips|datapath:dp|signext:se" File: /home/pedro/Mips/datapath.sv Line: 29
+Info (12128): Elaborating entity "alu" for hierarchy "top:dut|mips:mips|datapath:dp|alu:alu" File: /home/pedro/Mips/datapath.sv Line: 32
+Warning (10230): Verilog HDL assignment warning at alu.sv(7): truncated value with size 32 to match size of target (1) File: /home/pedro/Mips/alu.sv Line: 7
+Warning (10270): Verilog HDL Case Statement warning at alu.sv(11): incomplete case statement has no default case item File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[0]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[1]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[2]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[3]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[4]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[5]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[6]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[7]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[8]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[9]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[10]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[11]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[12]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[13]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[14]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[15]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[16]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[17]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[18]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[19]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[20]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[21]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[22]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[23]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[24]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[25]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[26]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[27]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[28]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[29]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[30]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (10041): Inferred latch for "y[31]" at alu.sv(11) File: /home/pedro/Mips/alu.sv Line: 11
+Info (12128): Elaborating entity "imem" for hierarchy "top:dut|imem:imem" File: /home/pedro/Mips/top.sv Line: 8
 Warning (10850): Verilog HDL warning at imem.sv(7): number of words (18) in memory file does not match the number of elements in the address range [0:63] File: /home/pedro/Mips/imem.sv Line: 7
 Warning (10030): Net "RAM.data_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/pedro/Mips/imem.sv Line: 4
 Warning (10030): Net "RAM.waddr_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/pedro/Mips/imem.sv Line: 4
 Warning (10030): Net "RAM.we_a" at imem.sv(4) has no driver or initial value, using a default initial value '0' File: /home/pedro/Mips/imem.sv Line: 4
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276004): RAM logic "RAM" is uninferred due to inappropriate RAM size File: /home/pedro/Mips/imem.sv Line: 4
-Warning (127007): Memory Initialization File or Hexadecimal (Intel-Format) File "/home/pedro/Mips/db/MIPS.ram0_imem_37c714.hdl.mif" contains "don't care" values -- overwriting them with 0s
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "rd[19]" is stuck at GND File: /home/pedro/Mips/imem.sv Line: 2
-    Warning (13410): Pin "rd[20]" is stuck at GND File: /home/pedro/Mips/imem.sv Line: 2
-    Warning (13410): Pin "rd[24]" is stuck at GND File: /home/pedro/Mips/imem.sv Line: 2
-    Warning (13410): Pin "rd[25]" is stuck at GND File: /home/pedro/Mips/imem.sv Line: 2
-    Warning (13410): Pin "rd[30]" is stuck at GND File: /home/pedro/Mips/imem.sv Line: 2
-Info (286030): Timing-Driven Synthesis is running
-Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
-    Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 58 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 6 input pins
-    Info (21059): Implemented 32 output pins
-    Info (21061): Implemented 20 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 12 warnings
-    Info: Peak virtual memory: 1286 megabytes
-    Info: Processing ended: Thu Nov 24 17:55:58 2016
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:40
+Info (12128): Elaborating entity "dmem" for hierarchy "top:dut|dmem:dmem" File: /home/pedro/Mips/top.sv Line: 9
+Warning (12011): Net is missing source, defaulting to GND
+    Warning (12110): Net "top:dut|mips:mips|zero" is missing source, defaulting to GND File: /home/pedro/Mips/mips.sv Line: 8
+Error (12061): Can't synthesize current design -- Top partition does not contain any logic
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 1 error, 11 warnings
+    Error: Peak virtual memory: 1237 megabytes
+    Error: Processing ended: Thu Nov 24 18:55:33 2016
+    Error: Elapsed time: 00:00:16
+    Error: Total CPU time (on all processors): 00:00:39
 
 

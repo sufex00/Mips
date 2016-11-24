@@ -29,7 +29,7 @@ module datapath (input	logic				clk, reset,
 		signext			se(instr[15:0],signimm);
 		
 		mux2	#(32)		srcbmux(writedata, signimm, alusrc, srcb);
-		alu				alu(srca, srcb,alucontrol, aluout,zero);
+		alu				alu(srca, srcb,alucontrol, zero, aluout);
 		
 endmodule
 		

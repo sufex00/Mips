@@ -1,5 +1,5 @@
 Analysis & Synthesis report for MIPS
-Wed Nov 23 10:53:58 2016
+Wed Nov 23 22:28:05 2016
 Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 
 
@@ -43,14 +43,14 @@ agreement for further details.
 +-------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                  ;
 +---------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status     ; Successful - Wed Nov 23 10:53:58 2016       ;
+; Analysis & Synthesis Status     ; Successful - Wed Nov 23 22:28:04 2016       ;
 ; Quartus Prime Version           ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
 ; Revision Name                   ; MIPS                                        ;
-; Top-level Entity Name           ; regfile                                     ;
+; Top-level Entity Name           ; aludeco                                     ;
 ; Family                          ; Cyclone V                                   ;
 ; Logic utilization (in ALMs)     ; N/A                                         ;
-; Total registers                 ; 1024                                        ;
-; Total pins                      ; 113                                         ;
+; Total registers                 ; 0                                           ;
+; Total pins                      ; 11                                          ;
 ; Total virtual pins              ; 0                                           ;
 ; Total block memory bits         ; 0                                           ;
 ; Total DSP Blocks                ; 0                                           ;
@@ -69,7 +69,7 @@ agreement for further details.
 ; Option                                                                          ; Setting            ; Default Value      ;
 +---------------------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
-; Top-level entity name                                                           ; regfile            ; MIPS               ;
+; Top-level entity name                                                           ; aludeco            ; MIPS               ;
 ; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
 ; Use smart compilation                                                           ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation      ; On                 ; On                 ;
@@ -167,35 +167,35 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path ; Library ;
 +----------------------------------+-----------------+------------------------------+------------------------------+---------+
-; regfile.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/pedro/Mips/regfile.sv  ;         ;
+; aludeco.sv                       ; yes             ; User SystemVerilog HDL File  ; /home/pedro/Mips/aludeco.sv  ;         ;
 +----------------------------------+-----------------+------------------------------+------------------------------+---------+
 
 
-+---------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary             ;
-+---------------------------------------------+-----------+
-; Resource                                    ; Usage     ;
-+---------------------------------------------+-----------+
-; Estimate of Logic utilization (ALMs needed) ; 1105      ;
-;                                             ;           ;
-; Combinational ALUT usage for logic          ; 610       ;
-;     -- 7 input functions                    ; 576       ;
-;     -- 6 input functions                    ; 32        ;
-;     -- 5 input functions                    ; 2         ;
-;     -- 4 input functions                    ; 0         ;
-;     -- <=3 input functions                  ; 0         ;
-;                                             ;           ;
-; Dedicated logic registers                   ; 1024      ;
-;                                             ;           ;
-; I/O pins                                    ; 113       ;
-;                                             ;           ;
-; Total DSP Blocks                            ; 0         ;
-;                                             ;           ;
-; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 1024      ;
-; Total fan-out                               ; 7483      ;
-; Average fan-out                             ; 4.02      ;
-+---------------------------------------------+-----------+
++--------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                  ;
++---------------------------------------------+----------------+
+; Resource                                    ; Usage          ;
++---------------------------------------------+----------------+
+; Estimate of Logic utilization (ALMs needed) ; 3              ;
+;                                             ;                ;
+; Combinational ALUT usage for logic          ; 5              ;
+;     -- 7 input functions                    ; 0              ;
+;     -- 6 input functions                    ; 1              ;
+;     -- 5 input functions                    ; 1              ;
+;     -- 4 input functions                    ; 3              ;
+;     -- <=3 input functions                  ; 0              ;
+;                                             ;                ;
+; Dedicated logic registers                   ; 0              ;
+;                                             ;                ;
+; I/O pins                                    ; 11             ;
+;                                             ;                ;
+; Total DSP Blocks                            ; 0              ;
+;                                             ;                ;
+; Maximum fan-out node                        ; aluop[1]~input ;
+; Maximum fan-out                             ; 3              ;
+; Total fan-out                               ; 37             ;
+; Average fan-out                             ; 1.37           ;
++---------------------------------------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -203,7 +203,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Block Memory Bits ; DSP Blocks ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
-; |regfile                   ; 610 (610)         ; 1024 (1024)  ; 0                 ; 0          ; 113  ; 0            ; |regfile            ; regfile     ; work         ;
+; |aludeco                   ; 5 (5)             ; 0 (0)        ; 0                 ; 0          ; 11   ; 0            ; |aludeco            ; aludeco     ; work         ;
 +----------------------------+-------------------+--------------+-------------------+------------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -213,12 +213,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 1024  ;
+; Total registers                              ; 0     ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 1024  ;
+; Number of registers using Clock Enable       ; 0     ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -228,18 +228,15 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; arriav_ff             ; 1024                        ;
-;     ENA               ; 1024                        ;
-; arriav_lcell_comb     ; 610                         ;
-;     extend            ; 576                         ;
-;         7 data inputs ; 576                         ;
-;     normal            ; 34                          ;
-;         5 data inputs ; 2                           ;
-;         6 data inputs ; 32                          ;
-; boundary_port         ; 113                         ;
+; arriav_lcell_comb     ; 5                           ;
+;     normal            ; 5                           ;
+;         4 data inputs ; 3                           ;
+;         5 data inputs ; 1                           ;
+;         6 data inputs ; 1                           ;
+; boundary_port         ; 11                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.59                        ;
+; Max LUT depth         ; 2.00                        ;
+; Average LUT depth     ; 1.62                        ;
 +-----------------------+-----------------------------+
 
 
@@ -248,7 +245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:01     ;
+; Top            ; 00:00:00     ;
 +----------------+--------------+
 
 
@@ -258,7 +255,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
-    Info: Processing started: Wed Nov 23 10:53:40 2016
+    Info: Processing started: Wed Nov 23 22:27:48 2016
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off MIPS -c MIPS
 Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file mux2.sv
@@ -273,20 +270,20 @@ Info (12021): Found 1 design units, including 1 entities, in source file adder.s
     Info (12023): Found entity 1: adder File: /home/pedro/Mips/adder.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file regfile.sv
     Info (12023): Found entity 1: regfile File: /home/pedro/Mips/regfile.sv Line: 1
-Info (12127): Elaborating entity "regfile" for the top level hierarchy
-Info (276014): Found 1 instances of uninferred RAM logic
-    Info (276007): RAM logic "rf" is uninferred due to asynchronous read logic File: /home/pedro/Mips/regfile.sv Line: 7
+Info (12021): Found 1 design units, including 1 entities, in source file aludeco.sv
+    Info (12023): Found entity 1: aludeco File: /home/pedro/Mips/aludeco.sv Line: 1
+Info (12127): Elaborating entity "aludeco" for the top level hierarchy
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 1747 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 49 input pins
-    Info (21059): Implemented 64 output pins
-    Info (21061): Implemented 1634 logic cells
+Info (21057): Implemented 16 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 8 input pins
+    Info (21059): Implemented 3 output pins
+    Info (21061): Implemented 5 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 1293 megabytes
-    Info: Processing ended: Wed Nov 23 10:53:58 2016
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:41
+    Info: Peak virtual memory: 1287 megabytes
+    Info: Processing ended: Wed Nov 23 22:28:05 2016
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:40
 
 

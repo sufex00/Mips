@@ -1,8 +1,8 @@
-module alu (input		logic	[31:0] a, 
-				input		logic	[31:0] b,
-				input		logic	[2:0]	 op,
-				output	logic			 zero,
-				output	logic	[31:0] y);
+module alu (input		logic signed[31:0] a, 
+				input		logic	signed[31:0] b,
+				input		logic	signed[2:0]	 op,
+				output	logic	signed		 zero,
+				output	logic	signed[31:0] y);
 				
 	assign zero = y ? 0 : 1;
 	

@@ -1,28 +1,28 @@
 # do MIPS.do
 # ** Warning: (vlib-34) Library already exists at "work".
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 00:54:11 on Nov 24,2016
+# Start time: 01:06:59 on Nov 24,2016
 # vlog -work work MIPS.vo 
 # -- Compiling module alu
 # 
 # Top level modules:
 # 	alu
-# End time: 00:54:11 on Nov 24,2016, Elapsed time: 0:00:00
+# End time: 01:06:59 on Nov 24,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
-# Start time: 00:54:11 on Nov 24,2016
+# Start time: 01:06:59 on Nov 24,2016
 # vlog -work work Waveform.vwf.vt 
 # -- Compiling module alu_vlg_vec_tst
 # 
 # Top level modules:
 # 	alu_vlg_vec_tst
-# End time: 00:54:11 on Nov 24,2016, Elapsed time: 0:00:00
+# End time: 01:06:59 on Nov 24,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vsim -novopt -c -t 1ps -L cyclonev_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.alu_vlg_vec_tst -voptargs=""+acc"" 
-# Start time: 00:54:11 on Nov 24,2016
+# Start time: 01:06:59 on Nov 24,2016
 # Loading work.alu_vlg_vec_tst
 # Loading work.alu
 # ** Note: $finish    : Waveform.vwf.vt(51)
 #    Time: 1 us  Iteration: 0  Instance: /alu_vlg_vec_tst
-# End time: 00:54:12 on Nov 24,2016, Elapsed time: 0:00:01
+# End time: 01:06:59 on Nov 24,2016, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0

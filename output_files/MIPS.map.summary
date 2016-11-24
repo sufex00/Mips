@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Nov 24 00:20:17 2016
+Analysis & Synthesis Status : Successful - Thu Nov 24 00:53:54 2016
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : MIPS
-Top-level Entity Name : controller
+Top-level Entity Name : alu
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
 Total registers : 0
-Total pins : 23
+Total pins : 100
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

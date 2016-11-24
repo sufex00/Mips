@@ -1,11 +1,11 @@
-Analysis & Synthesis Status : Successful - Thu Nov 24 16:46:48 2016
+Analysis & Synthesis Status : Successful - Thu Nov 24 17:48:51 2016
 Quartus Prime Version : 16.0.0 Build 211 04/27/2016 SJ Lite Edition
 Revision Name : MIPS
-Top-level Entity Name : datapath
+Top-level Entity Name : dmem
 Family : Cyclone V
 Logic utilization (in ALMs) : N/A
-Total registers : 1054
-Total pins : 172
+Total registers : 2048
+Total pins : 98
 Total virtual pins : 0
 Total block memory bits : 0
 Total DSP Blocks : 0

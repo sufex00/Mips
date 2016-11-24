@@ -19,36 +19,254 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "11/24/2016 01:06:56"
+// Generated on "11/24/2016 17:49:07"
                                                                                 
-// Verilog Test Bench (with test vectors) for design :                          alu
+// Verilog Test Bench (with test vectors) for design :                          dmem
 // 
 // Simulation tool : 3rd Party
 // 
 
 `timescale 1 ps/ 1 ps
-module alu_vlg_vec_tst();
+module dmem_vlg_vec_tst();
 // constants                                           
 // general purpose registers
 reg [31:0] a;
-reg [31:0] b;
-reg [2:0] op;
+reg clk;
+reg [31:0] wd;
+reg we;
 // wires                                               
-wire [31:0] y;
-wire zero;
+wire [31:0] rd;
 
 // assign statements (if any)                          
-alu i1 (
+dmem i1 (
 // port map - connection between master ports and signals/registers   
 	.a(a),
-	.b(b),
-	.op(op),
-	.y(y),
-	.zero(zero)
+	.clk(clk),
+	.rd(rd),
+	.wd(wd),
+	.we(we)
 );
 initial 
 begin 
 #1000000 $finish;
+end 
+
+// clk
+always
+begin
+	clk = 1'b0;
+	clk = #5000 1'b1;
+	#5000;
+end 
+// wd[ 31 ]
+initial
+begin
+	wd[31] = 1'b1;
+end 
+// wd[ 30 ]
+initial
+begin
+	wd[30] = 1'b0;
+end 
+// wd[ 29 ]
+initial
+begin
+	wd[29] = 1'b0;
+end 
+// wd[ 28 ]
+initial
+begin
+	wd[28] = 1'b1;
+end 
+// wd[ 27 ]
+initial
+begin
+	wd[27] = 1'b1;
+end 
+// wd[ 26 ]
+initial
+begin
+	wd[26] = 1'b0;
+end 
+// wd[ 25 ]
+initial
+begin
+	wd[25] = 1'b0;
+end 
+// wd[ 24 ]
+initial
+begin
+	wd[24] = 1'b1;
+end 
+// wd[ 23 ]
+initial
+begin
+	wd[23] = 1'b1;
+end 
+// wd[ 22 ]
+initial
+begin
+	wd[22] = 1'b0;
+end 
+// wd[ 21 ]
+initial
+begin
+	wd[21] = 1'b1;
+end 
+// wd[ 20 ]
+initial
+begin
+	wd[20] = 1'b0;
+end 
+// wd[ 19 ]
+initial
+begin
+	wd[19] = 1'b0;
+end 
+// wd[ 18 ]
+initial
+begin
+	wd[18] = 1'b1;
+end 
+// wd[ 17 ]
+initial
+begin
+	wd[17] = 1'b1;
+end 
+// wd[ 16 ]
+initial
+begin
+	wd[16] = 1'b1;
+end 
+// wd[ 15 ]
+initial
+begin
+	wd[15] = 1'b0;
+end 
+// wd[ 14 ]
+initial
+begin
+	wd[14] = 1'b0;
+end 
+// wd[ 13 ]
+initial
+begin
+	wd[13] = 1'b0;
+end 
+// wd[ 12 ]
+initial
+begin
+	wd[12] = 1'b0;
+end 
+// wd[ 11 ]
+initial
+begin
+	wd[11] = 1'b1;
+end 
+// wd[ 10 ]
+initial
+begin
+	wd[10] = 1'b1;
+end 
+// wd[ 9 ]
+initial
+begin
+	wd[9] = 1'b1;
+end 
+// wd[ 8 ]
+initial
+begin
+	wd[8] = 1'b0;
+	wd[8] = #630000 1'b1;
+end 
+// wd[ 7 ]
+initial
+begin
+	wd[7] = 1'b1;
+	wd[7] = #630000 1'b0;
+end 
+// wd[ 6 ]
+initial
+begin
+	wd[6] = 1'b1;
+	wd[6] = #630000 1'b0;
+end 
+// wd[ 5 ]
+initial
+begin
+	wd[5] = 1'b0;
+	wd[5] = #310000 1'b1;
+	wd[5] = #320000 1'b0;
+	wd[5] = #320000 1'b1;
+end 
+// wd[ 4 ]
+initial
+begin
+	wd[4] = 1'b0;
+	# 150000;
+	repeat(2)
+	begin
+		wd[4] = 1'b1;
+		wd[4] = #160000 1'b0;
+		# 160000;
+	end
+	wd[4] = 1'b1;
+	wd[4] = #160000 1'b0;
+end 
+// wd[ 3 ]
+initial
+begin
+	wd[3] = 1'b0;
+	# 70000;
+	repeat(5)
+	begin
+		wd[3] = 1'b1;
+		wd[3] = #80000 1'b0;
+		# 80000;
+	end
+	wd[3] = 1'b1;
+	wd[3] = #80000 1'b0;
+end 
+// wd[ 2 ]
+initial
+begin
+	wd[2] = 1'b0;
+	# 30000;
+	repeat(12)
+	begin
+		wd[2] = 1'b1;
+		wd[2] = #40000 1'b0;
+		# 40000;
+	end
+	wd[2] = 1'b1;
+end 
+// wd[ 1 ]
+initial
+begin
+	wd[1] = 1'b0;
+	# 10000;
+	repeat(24)
+	begin
+		wd[1] = 1'b1;
+		wd[1] = #20000 1'b0;
+		# 20000;
+	end
+	wd[1] = 1'b1;
+	wd[1] = #20000 1'b0;
+end 
+// wd[ 0 ]
+always
+begin
+	wd[0] = 1'b1;
+	wd[0] = #10000 1'b0;
+	#10000;
+end 
+
+// we
+initial
+begin
+	we = 1'b1;
+	we = #380000 1'b0;
 end 
 // a[ 31 ]
 initial
@@ -184,513 +402,97 @@ end
 initial
 begin
 	a[5] = 1'b0;
+	a[5] = #320000 1'b1;
+	a[5] = #60000 1'b0;
+	a[5] = #320000 1'b1;
 end 
 // a[ 4 ]
 initial
 begin
 	a[4] = 1'b0;
+	a[4] = #160000 1'b1;
+	a[4] = #160000 1'b0;
+	a[4] = #220000 1'b1;
+	a[4] = #160000 1'b0;
+	a[4] = #160000 1'b1;
 end 
 // a[ 3 ]
 initial
 begin
+	repeat(2)
+	begin
+		a[3] = 1'b0;
+		a[3] = #80000 1'b1;
+		# 80000;
+	end
 	a[3] = 1'b0;
+	a[3] = #140000 1'b1;
+	# 80000;
+	repeat(2)
+	begin
+		a[3] = 1'b0;
+		a[3] = #80000 1'b1;
+		# 80000;
+	end
+	a[3] = 1'b0;
+	a[3] = #80000 1'b1;
 end 
 // a[ 2 ]
 initial
 begin
+	repeat(4)
+	begin
+		a[2] = 1'b0;
+		a[2] = #40000 1'b1;
+		# 40000;
+	end
 	a[2] = 1'b0;
+	a[2] = #40000 1'b1;
+	# 20000;
+	repeat(7)
+	begin
+		a[2] = 1'b0;
+		a[2] = #40000 1'b1;
+		# 40000;
+	end
+	a[2] = 1'b0;
+	a[2] = #40000 1'b1;
 end 
 // a[ 1 ]
 initial
 begin
+	repeat(9)
+	begin
+		a[1] = 1'b0;
+		a[1] = #20000 1'b1;
+		# 20000;
+	end
+	a[1] = 1'b0;
+	a[1] = #40000 1'b1;
+	# 20000;
+	repeat(14)
+	begin
+		a[1] = 1'b0;
+		a[1] = #20000 1'b1;
+		# 20000;
+	end
 	a[1] = 1'b0;
 end 
 // a[ 0 ]
 initial
 begin
-	a[0] = 1'b0;
-end 
-// b[ 31 ]
-initial
-begin
-	b[31] = 1'b1;
-end 
-// b[ 30 ]
-initial
-begin
-	b[30] = 1'b1;
-end 
-// b[ 29 ]
-initial
-begin
-	b[29] = 1'b1;
-end 
-// b[ 28 ]
-initial
-begin
-	b[28] = 1'b1;
-end 
-// b[ 27 ]
-initial
-begin
-	b[27] = 1'b1;
-end 
-// b[ 26 ]
-initial
-begin
-	b[26] = 1'b1;
-end 
-// b[ 25 ]
-initial
-begin
-	b[25] = 1'b1;
-end 
-// b[ 24 ]
-initial
-begin
-	b[24] = 1'b1;
-end 
-// b[ 23 ]
-initial
-begin
-	b[23] = 1'b1;
-end 
-// b[ 22 ]
-initial
-begin
-	b[22] = 1'b1;
-end 
-// b[ 21 ]
-initial
-begin
-	b[21] = 1'b1;
-end 
-// b[ 20 ]
-initial
-begin
-	b[20] = 1'b1;
-end 
-// b[ 19 ]
-initial
-begin
-	b[19] = 1'b1;
-end 
-// b[ 18 ]
-initial
-begin
-	b[18] = 1'b1;
-end 
-// b[ 17 ]
-initial
-begin
-	b[17] = 1'b1;
-end 
-// b[ 16 ]
-initial
-begin
-	b[16] = 1'b1;
-end 
-// b[ 15 ]
-initial
-begin
-	b[15] = 1'b1;
-end 
-// b[ 14 ]
-initial
-begin
-	b[14] = 1'b1;
-end 
-// b[ 13 ]
-initial
-begin
-	b[13] = 1'b1;
-end 
-// b[ 12 ]
-initial
-begin
-	b[12] = 1'b1;
-end 
-// b[ 11 ]
-initial
-begin
-	b[11] = 1'b1;
-end 
-// b[ 10 ]
-initial
-begin
-	b[10] = 1'b1;
-end 
-// b[ 9 ]
-initial
-begin
-	b[9] = 1'b1;
-end 
-// b[ 8 ]
-initial
-begin
-	b[8] = 1'b1;
-end 
-// b[ 7 ]
-initial
-begin
-	b[7] = 1'b1;
-end 
-// b[ 6 ]
-initial
-begin
-	b[6] = 1'b1;
-end 
-// b[ 5 ]
-initial
-begin
-	b[5] = 1'b1;
-end 
-// b[ 4 ]
-initial
-begin
-	b[4] = 1'b1;
-end 
-// b[ 3 ]
-initial
-begin
-	b[3] = 1'b1;
-end 
-// b[ 2 ]
-initial
-begin
-	b[2] = 1'b1;
-end 
-// b[ 1 ]
-initial
-begin
-	b[1] = 1'b1;
-end 
-// b[ 0 ]
-initial
-begin
-	b[0] = 1'b1;
-end 
-// op[ 2 ]
-initial
-begin
-	op[2] = 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #15000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #15000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #15000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #15000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #15000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #20000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #15000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #30000 1'b0;
-	op[2] = #25000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #20000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #15000 1'b0;
-	op[2] = #20000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #15000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #25000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #30000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #15000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #15000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #15000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #30000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #15000 1'b0;
-	op[2] = #30000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #25000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #15000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #15000 1'b0;
-	op[2] = #10000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #10000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #5000 1'b0;
-	op[2] = #5000 1'b1;
-	op[2] = #15000 1'b0;
-end 
-// op[ 1 ]
-initial
-begin
-	op[1] = 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #15000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #20000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #10000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #20000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #25000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #25000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #25000 1'b0;
-	op[1] = #30000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #10000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #10000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #15000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #15000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #10000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #15000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #10000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #25000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #10000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #25000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #20000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #20000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #20000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #15000 1'b1;
-	op[1] = #5000 1'b0;
-	op[1] = #20000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #10000 1'b0;
-	op[1] = #5000 1'b1;
-	op[1] = #10000 1'b0;
-end 
-// op[ 0 ]
-initial
-begin
-	op[0] = 1'b1;
-	op[0] = #25000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #20000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #30000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #15000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #30000 1'b0;
-	op[0] = #15000 1'b1;
-	op[0] = #15000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #15000 1'b1;
-	op[0] = #15000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #20000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #15000 1'b0;
-	op[0] = #25000 1'b1;
-	op[0] = #20000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #20000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #35000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #15000 1'b1;
-	op[0] = #20000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #15000 1'b0;
-	op[0] = #15000 1'b1;
-	op[0] = #15000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #15000 1'b0;
-	op[0] = #35000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #10000 1'b1;
-	op[0] = #10000 1'b0;
-	op[0] = #5000 1'b1;
-	op[0] = #5000 1'b0;
-	op[0] = #5000 1'b1;
+	repeat(19)
+	begin
+		a[0] = 1'b0;
+		a[0] = #10000 1'b1;
+		# 10000;
+	end
+	repeat(31)
+	begin
+		a[0] = 1'b0;
+		a[0] = #10000 1'b1;
+		# 10000;
+	end
 end 
 endmodule
 

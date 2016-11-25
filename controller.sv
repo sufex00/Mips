@@ -8,12 +8,17 @@ module controller (input	logic [5:0]	op,funct,
 						 
 		logic [1:0]	aluop;
 		logic			branch;
+		logic			bne;
+		logic			pcsrcAND;
 		
 		maindec md (op, memtoreg, memwrite, branch, 
-						alusrc, regdst, regwrite, jump, aluop);
+						alusrc, regdst, regwrite, jump, aluop, bne);
 						
 		aludeco	ad (funct, aluop, alucontrol);
 		
-		assign	pcsrc = branch & zero;
+		assign pcsrcAND = branch & zero;
+		
+		mux2	#(1)		srcbmux(pcsrcAND, ~pcsrcAND, bne, pcsrc);
+		
 		
 endmodule

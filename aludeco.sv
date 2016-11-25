@@ -7,6 +7,7 @@ module aludeco (input	logic[5:0] funct,
 			case (aluop)
 				2'b00 : alucontrol <= 3'b010;
 				2'b01 : alucontrol <= 3'b110;
+				2'b11 : alucontrol <= 3'b001;
 				default:
 					case(funct)
 						6'b100000: alucontrol <= 3'b010;

@@ -1,16 +1,23 @@
-/home/pedro/Mips/sl2.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/sl2.sv
-Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
--- Compiling module sl2
-
-Top level modules:
-	sl2
-
-} {} {}} /home/pedro/Mips/maindec.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/maindec.sv
+/home/pedro/Mips/maindec.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/maindec.sv
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling module maindec
 
 Top level modules:
 	maindec
+
+} {} {}} /home/pedro/Mips/mips.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/mips.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module mips
+
+Top level modules:
+	mips
+
+} {} {}} /home/pedro/Mips/sl2.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/sl2.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module sl2
+
+Top level modules:
+	sl2
 
 } {} {}} /home/pedro/Mips/signext.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/signext.sv
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
@@ -33,6 +40,13 @@ Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 Top level modules:
 	aludeco
 
+} {} {}} /home/pedro/Mips/datapath.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/datapath.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module datapath
+
+Top level modules:
+	datapath
+
 } {} {}} /home/pedro/Mips/alu.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/alu.sv
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling module alu
@@ -54,19 +68,19 @@ Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 Top level modules:
 	dmem
 
-} {} {}} /home/pedro/Mips/mux2.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/mux2.sv
-Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
--- Compiling module mux2
-
-Top level modules:
-	mux2
-
 } {} {}} /home/pedro/Mips/controller.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/controller.sv
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 -- Compiling module controller
 
 Top level modules:
 	controller
+
+} {} {}} /home/pedro/Mips/mux2.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/mux2.sv
+Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
+-- Compiling module mux2
+
+Top level modules:
+	mux2
 
 } {} {}} /home/pedro/Mips/regfile.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/regfile.sv
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
@@ -81,13 +95,6 @@ Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 
 Top level modules:
 	testbench
-
-} {} {}} /home/pedro/Mips/imem.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/imem.sv
-Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
--- Compiling module imem
-
-Top level modules:
-	imem
 
 } {} {}} /home/pedro/Mips/adder.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/adder.sv
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015

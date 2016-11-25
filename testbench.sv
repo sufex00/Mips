@@ -2,7 +2,7 @@ module testbench();
 	logic clk;
 	logic reset;
 	
-	logic [31:0] writedata, dataadr;
+	logic signed [31:0] writedata, dataadr;
 	logic	memwrite;
 	
 	top dut (clk, reset, writedata, dataadr, memwrite);
@@ -18,7 +18,8 @@ module testbench();
 		begin
 			if (memwrite) 
 			begin
-				if (dataadr === 84 & writedata === 7) 
+				//if (dataadr === -32685 & writedata === 1) 
+					if (dataadr === 84 & writedata === 7)
 				begin
 					$display("Simulation succeeded");
 					$stop;
@@ -26,7 +27,7 @@ module testbench();
 				else 
 					if (dataadr !== 80) 
 					begin
-						$display("Simulation failed");
+						$display("Simulation failed %d <= %d", dataadr, writedata);
 						$stop;
 					end
 				end

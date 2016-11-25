@@ -3,28 +3,32 @@ module maindec (input	logic [5:0] op,
 					 output	logic			branch, alusrc,
 					 output	logic			regdst, regwrite,
 					 output	logic			jump,
-					 output	logic	[1:0]	aluop);
+					 output	logic	[1:0]	aluop,
+					 output	logic			bne);
 					 
-		logic [8:0]	controls;
+		logic [9:0]	controls;
 		
-		assign 	regwrite = 	controls [8];
-		assign 	regdst	=	controls	[7];
-		assign	alusrc	=	controls	[6];
-		assign	branch	=	controls	[5];
-		assign	memwrite	=	controls	[4];
-		assign	memtoreg	=	controls	[3];
-		assign	jump		=	controls	[2];
-		assign	aluop		=	controls	[1:0];
+		assign 	regwrite = 	controls [9];
+		assign 	regdst	=	controls	[8];
+		assign	alusrc	=	controls	[7];
+		assign	branch	=	controls	[6];
+		assign	memwrite	=	controls	[5];
+		assign	memtoreg	=	controls	[4];
+		assign	jump		=	controls	[3];
+		assign	aluop		=	controls	[2:1];
+		assign	bne		=	controls	[0];
 		
 		always_comb
 			case(op)
-				6'b000000: controls <= 9'b1_1000_0010;
-				6'b100011: controls <= 9'b1_0100_1000;
-				6'b101011: controls <= 9'b0_0101_0000;
-				6'b000100: controls <= 9'b0_0010_0001;
-				6'b001000: controls <= 9'b1_0100_0000;
-				6'b000010: controls <= 9'b0_0000_0100;
-				default:	  controls <= 9'bx_xxxx_xxxx;
+				6'b000000: controls <= 10'b11_0000_0100;
+				6'b100011: controls <= 10'b10_1001_0000;
+				6'b101011: controls <= 10'b00_1010_0000;
+				6'b000100: controls <= 10'b00_0100_0010; //beq
+				6'b001000: controls <= 10'b10_1000_0000;
+				6'b000010: controls <= 10'b00_0000_1000;
+				6'b001101: controls <= 10'b10_1000_0110; // ori
+				6'b000101: controls <= 10'b00_0100_0011;
+				default:	  controls <= 10'bXx_xxxx_xxxx;
 			endcase
 endmodule
 		

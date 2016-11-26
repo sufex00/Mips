@@ -132,3 +132,335 @@ run -all
 # ** Note: $stop    : /home/pedro/Mips/testbench.sv(31)
 #    Time: 155 ps  Iteration: 1  Instance: /testbench
 # Break in Module testbench at /home/pedro/Mips/testbench.sv line 31
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 21:52:25 on Nov 25,2016, Elapsed time: 2:52:12
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 21:52:25 on Nov 25,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.mux2
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation failed          76 <=           7
+# ** Note: $stop    : /home/pedro/Mips/testbench.sv(31)
+#    Time: 155 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at /home/pedro/Mips/testbench.sv line 31
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+run -all
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 21:57:14 on Nov 25,2016, Elapsed time: 0:04:49
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 21:57:14 on Nov 25,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.mux2
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+add wave -position insertpoint sim:/testbench/*
+run -all
+# Simulation succeeded
+# ** Note: $stop    : /home/pedro/Mips/testbench.sv(25)
+#    Time: 175 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at /home/pedro/Mips/testbench.sv line 25
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 22:05:06 on Nov 25,2016, Elapsed time: 0:07:52
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 22:05:06 on Nov 25,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.mux2
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+add wave -position insertpoint sim:/testbench/*
+run -all
+# Simulation failed          76 <=           7
+# ** Note: $stop    : /home/pedro/Mips/testbench.sv(31)
+#    Time: 155 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at /home/pedro/Mips/testbench.sv line 31
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 22:07:19 on Nov 25,2016, Elapsed time: 0:02:13
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 22:07:19 on Nov 25,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.mux2
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation failed          76 <=           x
+# ** Note: $stop    : /home/pedro/Mips/testbench.sv(31)
+#    Time: 155 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at /home/pedro/Mips/testbench.sv line 31
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 22:08:03 on Nov 25,2016, Elapsed time: 0:00:44
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 22:08:03 on Nov 25,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.mux2
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation failed          77 <=           7
+# ** Note: $stop    : /home/pedro/Mips/testbench.sv(31)
+#    Time: 155 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at /home/pedro/Mips/testbench.sv line 31
+run-all
+# invalid command name "run-all"
+run -all
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 22:08:36 on Nov 25,2016, Elapsed time: 0:00:33
+# Errors: 1, Warnings: 0
+# vsim work.testbench 
+# Start time: 22:08:36 on Nov 25,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.mux2
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+run -all
+# Simulation failed          76 <=           7
+# ** Note: $stop    : /home/pedro/Mips/testbench.sv(31)
+#    Time: 155 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at /home/pedro/Mips/testbench.sv line 31
+# Compile of testbench.sv was successful.
+# Compile of top.sv was successful.
+# Compile of adder.sv was successful.
+# Compile of alu.sv was successful.
+# Compile of aludeco.sv was successful.
+# Compile of controller.sv was successful.
+# Compile of datapath.sv was successful.
+# Compile of dmem.sv was successful.
+# Compile of flopr.sv was successful.
+# Compile of imem.sv was successful.
+# Compile of maindec.sv was successful.
+# Compile of mips.sv was successful.
+# Compile of mux2.sv was successful.
+# Compile of regfile.sv was successful.
+# Compile of signext.sv was successful.
+# Compile of sl2.sv was successful.
+# 16 compiles, 0 failed with no errors.
+vsim work.testbench
+# End time: 22:14:27 on Nov 25,2016, Elapsed time: 0:05:51
+# Errors: 0, Warnings: 0
+# vsim work.testbench 
+# Start time: 22:14:27 on Nov 25,2016
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.mips
+# Loading work.controller
+# Loading work.maindec
+# Loading work.aludeco
+# Loading work.mux2
+# Loading work.datapath
+# Loading work.flopr
+# Loading work.adder
+# Loading work.sl2
+# Loading work.regfile
+# Loading work.signext
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+add wave -position insertpoint sim:/testbench/*
+run -all
+# Simulation succeeded
+# ** Note: $stop    : /home/pedro/Mips/testbench.sv(25)
+#    Time: 155 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at /home/pedro/Mips/testbench.sv line 25

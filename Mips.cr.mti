@@ -89,12 +89,12 @@ Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
 Top level modules:
 	regfile
 
-} {} {}} /home/pedro/Mips/testbench.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/testbench.sv
+} {} {}} /home/pedro/Mips/imem.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/imem.sv
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015
--- Compiling module testbench
+-- Compiling module imem
 
 Top level modules:
-	testbench
+	imem
 
 } {} {}} /home/pedro/Mips/adder.sv {1 {vlog -work work -sv -stats=none /home/pedro/Mips/adder.sv
 Model Technology ModelSim ALTERA vlog 10.4d Compiler 2015.12 Dec 30 2015

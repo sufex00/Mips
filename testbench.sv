@@ -18,14 +18,14 @@ module testbench();
 		begin
 			if (memwrite) 
 			begin
-				//if (dataadr === -32685 & writedata === 1) 
-					if (dataadr === 76 & writedata === 7)
+				if (dataadr === -32685) 
+					
 				begin
 					$display("Simulation succeeded");
 					$stop;
 				end 
 				else 
-					if (dataadr !== 72) 
+					if (dataadr !== -32685) 
 					begin
 						$display("Simulation failed %d <= %d", dataadr, writedata);
 						$stop;
